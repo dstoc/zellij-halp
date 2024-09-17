@@ -1,0 +1,10 @@
+[package]
+name = "zellij-halp"
+version = "0.1.0"
+authors = ["dstoc <https://github.com/dstoc>"]
+edition = "2021"
+
+[dependencies]
+zellij-tile = "0.40.1"
+ratatui = {version ="0.28.1", default-features = false }
+debug_parser = "0.1.4"

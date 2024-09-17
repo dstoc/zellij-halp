@@ -1,0 +1,19 @@
+layout {
+    pane split_direction="vertical" {
+        pane edit="src/main.rs"
+        pane {
+            // pane edit="Cargo.toml"
+            pane {
+                pane command="bash" name="COMPILE AND RELOAD PLUGIN" {
+                    args "-c" "watchexec 'cargo build && zellij action start-or-reload-plugin file:target/wasm32-wasi/debug/zellij-halp.wasm'"
+                }
+                pane {
+                    plugin location="file:target/wasm32-wasi/debug/zellij-halp.wasm"
+                }
+            }
+        }
+    }
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+}

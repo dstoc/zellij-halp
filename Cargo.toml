@@ -8,3 +8,4 @@ edition = "2021"
 zellij-tile = "0.40.1"
 ratatui = {version ="0.28.1", default-features = false }
 debug_parser = "0.1.4"
+insta = "1.40.0"

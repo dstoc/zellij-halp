@@ -9,3 +9,6 @@ This is a [Zellij](https://github.com/zellij-org/zellij) plugin that displays th
 ```bash
 zellij action new-tab --layout ./plugin-dev-workspace.kdl
 ```
+Test:
+* `cargo wasi test --lib`
+* `cargo insta test --target x86_64-unknown-linux-gnu --lib`
